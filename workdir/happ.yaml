@@ -1,0 +1,18 @@
+---
+manifest_version: "1"
+name: scwr
+description: ~
+roles:
+  - name: scwr
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dnas/scwr/workdir/scwr.dna"
+      modifiers:
+        network_seed: ~
+        properties: ~
+        origin_time: ~
+        quantum_time: ~
+      installed_hash: ~
+      clone_limit: 0

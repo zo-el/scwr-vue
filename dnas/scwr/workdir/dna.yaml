@@ -1,0 +1,21 @@
+---
+manifest_version: "1"
+name: scwr
+integrity:
+  network_seed: ~
+  properties: ~
+  origin_time: 1732044231510700
+  zomes:
+    - name: scwr_integrity
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/scwr_integrity.wasm"
+      dependencies: ~
+      dylib: ~
+coordinator:
+  zomes:
+    - name: scwr
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/scwr.wasm"
+      dependencies:
+        - name: scwr_integrity
+      dylib: ~
